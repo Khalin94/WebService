@@ -19,7 +19,7 @@ apply plugin : 'io.spring.dependency-management'
 group 'com.khalin'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 12
+sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
