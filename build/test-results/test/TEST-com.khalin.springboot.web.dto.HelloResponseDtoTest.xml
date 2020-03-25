@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.khalin.springboot.web.dto.HelloResponseDtoTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-24T08:13:23" hostname="Seong-gyuui-MacBookPro.local" time="0.185">
+  <properties/>
+  <testcase name="lombokProcessTest" classname="com.khalin.springboot.web.dto.HelloResponseDtoTest" time="0.185"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
