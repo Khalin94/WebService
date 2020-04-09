@@ -13,6 +13,18 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  - provider: s3
+    access_key_id: $AWS_ACCESS_KEY #TRAVIS에 등록된 key
+    secret_access_key: $AWS_SECRET_KEY #TRAVIS에 등록된 secret key
+    bucket: webservice-build-file #s3 bucket
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private
+    local_dir: deploy
+    wait-untill-deployed: true
+
+
 notifications:
   email:
     recipients:
