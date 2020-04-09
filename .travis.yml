@@ -14,6 +14,11 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
+  - zip -r WebService *
+  - mkdir -p deploy
+  - mv WebService.zip deploy/WebService.zip
+
+deploy:
   - provider: s3
     access_key_id: $AWS_ACCESS_KEY #TRAVIS에 등록된 key
     secret_access_key: $AWS_SECRET_KEY #TRAVIS에 등록된 secret key
