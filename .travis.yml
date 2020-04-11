@@ -6,6 +6,9 @@ branches:
   only:
     - master
 
+before_install:
+  - chomod +x gradlew
+
 cache:
   directories:
     - '$HOME/.m2/repository'
