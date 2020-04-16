@@ -8,7 +8,8 @@ cp $REPOSITORY/zip/*.jar $REPOSITORY
 
 echo "> 현재 구동중인 Application PID"
 
-CURRENT_PID=$(pgrep -fl WebService | grep jar | awk '{print $1}')
+#CURRENT_PID=$(pgrep -fl WebService | grep jar | awk '{print $1}')
+CURRENT_PID=$(pgrep -fl webService | awk '{print $1}')
 
 echo "> 현재 구동 중인 Application PID : $CURRENT_PID"
 
